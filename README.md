@@ -25,5 +25,5 @@ commands:
     message: null # if the message is null its sends nothing to the player
 ...
 ```
-
+![alt text](https://github.com/Refaltor77/SimpleLobbyCmd/blob/main/image.png?raw=true)
 
