@@ -1,0 +1,6 @@
+name: SimpleLobbyCmd
+version: 1.0.0
+api: 3.0.0
+author: refaltor
+main: refaltor\SimpleLobbyCmd\Main
+website: https://goldrushmc.eu
