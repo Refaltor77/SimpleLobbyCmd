@@ -11,12 +11,12 @@ use pocketmine\Server;
 
 class Commands extends Command
 {
-    public int $x;
-    public int $y;
-    public int $z;
-    public string $level;
-    public Plugin $plugin;
-    public ?string $message;
+    public $x;
+    public $y;
+    public $z;
+    public $level;
+    public $plugin;
+    public $message;
 
     public function __construct(int $x, int $y, int $z, string $level, Plugin $plugin, string $name, string $description = "", ?string $message = null, string $usageMessage = null, array $aliases = [])
     {
@@ -35,7 +35,6 @@ class Commands extends Command
         if (!$sender instanceof Player) return;
         $level = Server::getInstance()->getLevelByName($this->level);
         if (is_null($level)){
-            $this->plugin->getServer()->getLogger()->critical("§c[§4WARNING§c] §cLevel '{$this->level}' is null");
             $this->plugin->getServer()->getPluginManager()->disablePlugin($this->plugin);
         }
         $position = new Position($this->x, $this->y, $this->z, $level);
