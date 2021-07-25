@@ -6,7 +6,7 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\level\Position;
 use pocketmine\Player;
-use pocketmine\plugin\Plugin;
+use refaltor\SimpleLobbyCmd\Main;
 use pocketmine\Server;
 
 class Commands extends Command
@@ -18,7 +18,7 @@ class Commands extends Command
     public $plugin;
     public $message;
 
-    public function __construct(int $x, int $y, int $z, string $level, Plugin $plugin, string $name, string $description = "", ?string $message = null, string $usageMessage = null, array $aliases = [])
+    public function __construct(int $x, int $y, int $z, string $level, Main $plugin, string $name, string $description = "", ?string $message = null, string $usageMessage = null, array $aliases = [])
     {
         $this->x = $x;
         $this->y = $y;
